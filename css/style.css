@@ -1,0 +1,99 @@
+.title {
+    /*border: solid 5px black;*/
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.description {
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.term {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.definition {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.button {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+button {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.main-card-container {
+    position: relative;
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    margin-top: 5%
+}
+
+.thecard {
+    /*position: relative;*/
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;
+    display: grid;
+    place-content: center;*/
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(45, 5, 114);
+    border-radius: 10%;
+    color: #333;
+    text-align: center;
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(45, 5, 114);
+    border-radius: 10%;
+    color: #333;
+    transform: rotateY(180deg);
+}
